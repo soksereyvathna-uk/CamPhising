@@ -1,63 +1,108 @@
-### Please use this tool for education purpose only
-CamPhish: An Educational Overview
-Abstract
+# 📸 CamPhish: An Educational Overview
 
-CamPhish is a proof-of-concept tool designed to demonstrate how web-based camera access permissions can be exploited during penetration testing scenarios. The tool operates by hosting a web page that requests camera access from a target device. If permission is granted, images captured from the device’s camera are transmitted to the hosting server. This project is intended strictly for educational and ethical cybersecurity research purposes.
+> ⚠️ **Disclaimer:**  
+> This project is strictly for **educational and ethical cybersecurity purposes only**.  
+> Unauthorized use may be illegal and is strongly discouraged.
 
-1. Introduction
+---
 
-CamPhish illustrates a social engineering–based technique in which a target is encouraged to grant camera access through a seemingly legitimate web interface. The tool highlights the importance of user awareness, browser security permissions, and ethical considerations in cybersecurity. It is commonly referenced in penetration testing environments to study human factors and client-side security vulnerabilities.
+## 📄 Abstract
 
-2. System Description
+CamPhish is a proof-of-concept tool designed to demonstrate how web-based camera access permissions can be exploited in penetration testing scenarios.  
 
-CamPhish hosts a web application using a built-in PHP server and exposes it to the internet via tunneling services. The generated link is shared with a target user. When accessed, the web page prompts the user to allow camera access. Upon approval, the system captures images from the device’s front camera or webcam.
+The tool hosts a web page that requests camera access from a target device. If permission is granted, images captured from the device’s camera are transmitted to the hosting server.  
 
-To improve user engagement and increase interaction time, the tool provides predefined web templates that simulate legitimate content.
+This project is intended strictly for **educational and ethical cybersecurity research**.
 
-3. Features
+---
 
-The tool includes the following functionalities:
+## 🧠 1. Introduction
 
-Automated web page templates to maintain user interaction
+CamPhish demonstrates a **social engineering technique** where a target is encouraged to grant camera access through a seemingly legitimate web interface.  
 
-Simulated festival greeting pages
+It highlights:
+- User awareness  
+- Browser permission security  
+- Ethical responsibilities in cybersecurity  
 
-Embedded live-stream-style video pages (e.g., YouTube-based layouts)
+This tool is commonly referenced in **penetration testing environments** to study human behavior and client-side vulnerabilities.
 
-Simple input mechanisms such as festival names or video identifiers
+---
 
-These features are intended to demonstrate how social engineering techniques can be combined with technical methods in security testing.
+## ⚙️ 2. System Description
 
-4. Supported Platforms
+CamPhish works by hosting a web application using a built-in PHP server and exposing it via tunneling services.
 
-CamPhish has been tested on multiple operating systems commonly used in security research, including:
+### 🔁 Workflow:
+1. A web page is generated and hosted  
+2. A public link is created using tunneling  
+3. The link is shared with a target user  
+4. The page requests camera access  
+5. If approved, images are captured from the device  
 
-Kali Linux
+To improve engagement, the tool includes templates that simulate legitimate content.
 
-Termux (Android environment)
+---
 
-macOS
+## ✨ 3. Features
 
-Ubuntu
+- 🎭 Pre-built web page templates  
+- 🎉 Festival greeting simulations  
+- 🎥 Video-style (YouTube-like) pages  
+- 🔤 Custom input (festival names, video IDs)  
+- 🧠 Demonstrates social engineering techniques  
 
-Parrot Security OS
+---
 
-5. Installation Requirements
+## 💻 4. Supported Platforms
 
-The tool requires the following software components:
+- 🐧 Kali Linux  
+- 📱 Termux (Android)  
+- 🍎 macOS  
+- 🐧 Ubuntu  
+- 🛡️ Parrot Security OS  
 
-PHP (for the local web server)
+---
 
-SSH or tunneling services for remote access
+## 🛠️ 5. Installation Requirements
 
-Git and supporting utilities
+Make sure the following tools are installed:
 
-Required dependencies can be installed using the system package manager.
+- PHP (local web server)  
+- SSH / tunneling service (e.g., ngrok)  
+- Git  
+- Basic system utilities  
 
-6. Ethical Considerations
+Install dependencies using your system’s package manager.
 
-CamPhish is developed solely for academic learning, penetration testing demonstrations, and cybersecurity awareness training. Unauthorized surveillance, privacy invasion, or misuse of this tool is unethical and may be illegal. Users are responsible for ensuring that all testing is conducted with explicit permission and within legal boundaries.
+---
 
-7. Acknowledgements
+## ⚖️ 6. Ethical Considerations
 
-This project was inspired by earlier cybersecurity research tools developed within the open-source community. Credit is given to prior contributors whose work supported the educational foundation of this project.
+> 🚨 **Important Notice**
+
+This tool is intended for:
+- Cybersecurity education  
+- Penetration testing (with permission)  
+- Security awareness training  
+
+❌ Do NOT use for:
+- Unauthorized surveillance  
+- Privacy invasion  
+- Malicious activities  
+
+Users are fully responsible for ensuring **legal and ethical use**.
+
+---
+
+## 🙏 7. Acknowledgements
+
+This project is inspired by open-source cybersecurity research tools.  
+
+Special thanks to the community contributors who support **ethical hacking education**.
+
+---
+
+## ⭐ Final Note
+
+> “Understanding vulnerabilities is the first step to securing systems.”
